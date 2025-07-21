@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "@supabase/supabase-js": "^2.50.5",
+    "axios": "^1.10.0",
+    "body-parser": "^2.2.0",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "vite": "^7.0.4"
+  },
+  "name": "platinum",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaydenspark-code/Platinum.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaydenspark-code/Platinum/issues"
+  },
+  "homepage": "https://github.com/jaydenspark-code/Platinum#readme",
+  "description": ""
+}

@@ -1,0 +1,72 @@
+modules = ["nodejs-20", "web"]
+run = "cd project/project && npm install && npm run dev"
+
+[nix]
+channel = "stable-24_05"
+
+[deployment]
+run = ["sh", "-c", "cd project/project && npm install && npm run dev"]
+
+[[ports]]
+localPort = 3000
+externalPort = 80
+
+[[ports]]
+localPort = 5173
+externalPort = 5173
+
+[[ports]]
+localPort = 5174
+externalPort = 3000
+
+[[ports]]
+localPort = 5175
+externalPort = 3001
+
+[[ports]]
+localPort = 5176
+externalPort = 3002
+
+[[ports]]
+localPort = 5177
+externalPort = 3003
+
+[[ports]]
+localPort = 5178
+externalPort = 4200
+
+[[ports]]
+localPort = 5179
+externalPort = 5000
+
+[[ports]]
+localPort = 5180
+externalPort = 6000
+
+[[ports]]
+localPort = 5181
+externalPort = 6800
+
+[[ports]]
+localPort = 5182
+externalPort = 8000
+
+[[ports]]
+localPort = 5183
+externalPort = 8008
+
+[[ports]]
+localPort = 5184
+externalPort = 8080
+
+[workflows]
+runButton = "Dev Server"
+
+[[workflows.workflow]]
+name = "Dev Server"
+author = 35276648
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd project/project && npm run dev"
